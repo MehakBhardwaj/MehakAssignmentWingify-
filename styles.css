@@ -1,0 +1,160 @@
+*{
+  box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #5e5eed 50%, #FFFFFF 50%);
+    background-size: 100% 50%;
+    background-repeat: no-repeat;
+
+    
+  }
+  
+  
+   
+  
+
+
+  h2{
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 0 400px;
+    
+  }
+  
+  .square {
+    display: flex;
+    width: 100%;
+    height: calc(100% - 200px);
+    background-color: #f0f0f0;
+    overflow: hidden;
+  }
+  
+  .image-section,
+  .form-section {
+    flex: 1;
+    padding: 1px 4px;
+    
+  }
+  
+  .image-section {
+    margin-right: -20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .form-section {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  .form-section h2 {
+    margin-top: 0;
+  }
+  
+  #registration-form {
+    width: 100%;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input,
+  select {
+    width: calc(100% - 12px);
+    padding: 6px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .dob-section {
+    margin-bottom: 20px;
+  }
+
+  .dob-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .dob-inputs {
+    display: flex;
+    align-items: center;
+  }
+
+  .dob-input {
+    width: calc(33.33% - 5px);
+    margin-right: 5px;
+  }
+
+  .dob-input:last-child {
+    margin-right: 0;
+  }
+
+  .account-type-section {
+    margin-bottom: 20px;
+  }
+
+  .account-type-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  .account-type-options {
+    display: flex;
+    align-items: center;
+  }
+
+  .account-type-option {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+  }
+
+  .account-type-option input[type="radio"] {
+    margin-right: 5px;
+  }
+
+  .account-type-option label {
+    margin: 0;
+  }
+
+  .account-type-option label:first-child {
+    margin-right: 10px;
+  }
+
+  
+  button {
+    display: block;
+    width: 100%;
+    background-color: #00bfff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+  }
+
+  button:hover {
+    background-color: #009acd;
+  }
+  

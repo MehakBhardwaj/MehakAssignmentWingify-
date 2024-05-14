@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registration Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="background">
+
+  </div>
+  
+  <div class="container">
+    <div class="square">
+      <div class="image-section">
+        <img src="image.png" alt="Placeholder Image">
+      </div>
+      <div class="form-section">
+        <h2>Create an account</h2><br>
+        <form id="registration-form">
+          <label for="email"><b>Email:</b></label><br>
+          <input type="email" id="email" name="email" required><br><br>
+           
+          <div class="dob-section">
+            <label for="dob" class="dob-label">Date of Birth (optional):</label><br>
+            <div class="dob-inputs"><br>
+              <input type="number" id="day" name="day" class="dob-input" placeholder="Day" min="1" max="31"><br>
+              <select id="month" name="month" class="dob-input"><br>
+                <option value="" disabled selected>Month</option>
+                <option value="01">January</option>
+                <option value="02">February</option>
+                <option value="03">March</option>
+                <option value="04">April</option>
+                <option value="05">May</option>
+                <option value="06">June</option>
+                <option value="07">July</option>
+                <option value="08">August</option>
+                <option value="09">September</option>
+                <option value="10">October</option>
+                <option value="11">November</option>
+                <option value="12">December</option>
+              </select>
+              <input type="number" id="year" name="year" class="dob-input" placeholder="Year"><br>
+            </div>
+          </div>
+          
+          <label for="password"><b>Choose a storng Password:</b></label><br>
+          <input type="password" id="password" name="password" required><br><br>
+          
+          <div class="account-type-section">
+            <label for="account-type" class="account-type-label">Are you an Individual or Agency?</label><br>
+            <div class="account-type-options">
+              <div class="account-type-option">
+                <input type="radio" id="individual" name="account-type" value="Individual">
+                <label for="individual">Individual</label>
+              </div>
+              <div class="account-type-option">
+                <input type="radio" id="agency" name="account-type" value="Agency">
+                <label for="agency">Agency</label>
+              </div>
+            </div>
+          </div><br>
+        
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
